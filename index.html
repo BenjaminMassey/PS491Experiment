@@ -6,6 +6,22 @@
     <title>Unity WebGL Player | PS 491 Experiment</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+	<script src =
+	  "https://smtpjs.com/v3/smtp.js">
+	</script>
+	<script type="text/javascript">
+	  function DoSendMail(str) {
+	    Email.send({
+		  Host: "smtp.gmail.com",
+		  Username: "ps491experiment@gmail.com",
+		  Password: "benmollywill",
+		  To: 'ps491experiment@gmail.com',
+		  From: 'ps491experiment@gmail.com',
+		  Subject: "Experiment Results",
+		  Body: "This a bunch of test text weee",
+		});
+	  }
+	</script>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
