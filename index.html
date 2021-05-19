@@ -10,15 +10,15 @@
 	  "https://smtpjs.com/v3/smtp.js">
 	</script>
 	<script type="text/javascript">
-	  function DoSendMail(str) {
+	  function DoSendMail(msg, pass) {
 	    Email.send({
 		  Host: "smtp.gmail.com",
 		  Username: "ps491experiment@gmail.com",
-		  Password: "benmollywill",
+		  Password: String(pass),
 		  To: 'ps491experiment@gmail.com',
 		  From: 'ps491experiment@gmail.com',
 		  Subject: "Experiment Results",
-		  Body: String(str),
+		  Body: String(msg),
 		});
 	  }
 	</script>
